@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/fondo1"
+    android:layout_height="match_parent"
+    tools:context=".Listview_Articl">
+
+    <LinearLayout
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="15dp"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/btnvol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/regresar"
+                android:onClick="vol"
+                android:src="@drawable/regresar">
+            </ImageButton>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Lista de Articulos"
+                android:textColor="#FF5722"
+                android:textSize="20dp"
+                android:textStyle="italic"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="30dp"
+                android:layout_height="wrap_content">
+            </TextView>
+
+        </LinearLayout>
+        <SearchView
+            android:id="@+id/buscador"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            app:queryHint="Search men"
+            android:layout_height="wrap_content">
+        </SearchView>
+
+        <ListView
+            android:id="@+id/ListViewPeople"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#673AB7"
+            android:layout_marginBottom="30dp">
+        </ListView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Bertha Marisol Ortiz Ramos autor"
+            android:textColor="#FF5722"
+            android:textSize="15dp"
+            android:textStyle="italic"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="20dp"
+            android:layout_height="wrap_content">
+        </TextView>
+    </LinearLayout>
+
+
+</RelativeLayout>
